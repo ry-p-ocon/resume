@@ -6,7 +6,7 @@ This repository is meant to serve as both a **public resume** for recruiters and
 
 ---
 
-## 📂 Contents
+## Contents
 
 - `resume.pdf` – Final print-ready version of my resume
 - `resume.md` – Markdown version (viewable on GitHub)
@@ -16,7 +16,7 @@ This repository is meant to serve as both a **public resume** for recruiters and
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - Markdown (`.md`) — Clean, readable source for web rendering
 - LaTeX (`.tex`) — Typeset version using industry-standard formatting
@@ -38,15 +38,15 @@ _Note: This link will not work until GitHub Pages is activated for this reposito
 
 This repository demonstrates:
 
-- 📄 Proper resume formatting in multiple technical formats
-- ✅ Version-controlled editing of a professional resume
-- 💼 Presentation of documents in a developer portfolio
+- Proper resume formatting in multiple technical formats
+- Version-controlled editing of a professional resume
+- Presentation of documents in a developer portfolio
 
 ---
 
 ## License
 
-📄 This resume and all associated content are **not open source**.
+This resume and all associated content are **not open source**.
 
 Use of this material is permitted **only for professional review** (e.g., by employers, recruiters, or academic committees). Redistribution, modification, or commercial use is **strictly prohibited** without written permission.
 
