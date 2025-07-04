@@ -1,0 +1,197 @@
+\documentclass[10pt,letterpaper,sans]{moderncv}
+
+\moderncvcolor{burgundy}        % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
+
+% moderncv Themes
+\moderncvstyle[]{contemporary}  % style options are 'casual' (default), 'classic', 'banking', 'oldstyle', 'fancy' and 'contemporary'
+                                % the 'contemporary' style optionally takes the `qr` (default) or `noqr` options
+% Supress auto page numbering
+\nopagenumbers{}
+
+% Adjust Header Font color
+\colorlet{headtext}{white}
+
+% Adjust Page Margins
+\usepackage[hmargin=0.5in,vmargin=14pt]{geometry}
+
+% XeLaTeX Font Loading
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+
+% Default font families
+\setmainfont{Fira Sans}
+\setsansfont[ItalicFont={Fira Sans Light Italic},%
+            BoldFont={Fira Sans},%
+            BoldItalicFont={Fira Sans Italic}]%
+            {Fira Sans Light}%
+\setmonofont{Fira Mono}
+
+% document language
+\usepackage[english]{babel}
+
+
+
+% personal data
+\name{Ryan}{O'Connor}
+\phone[mobile]{+1~(845)~825~4707}
+\email{ry.p.ocon@gmail.com}
+% \homepage{}   TBD: utilize when github, or another page, is setup
+
+% Social icons
+\social[linkedin]{ryan-oconnor-222b86246}
+\social[github]{ry-p-ocon}
+
+\photo[64pt][2pt]{picture} 
+
+
+\begin{document}
+%----------------------------------------------------------------------------------
+%            RESUME
+%----------------------------------------------------------------------------------
+\makecvtitle
+
+\section[\faGraduationCap]{Education}
+\cventry{2022--2025}{Bachelor of Arts in Computer Science}{Hunter College}{Manhattan NY}{Aug. 2025 Completion}{
+Relevant Coursework: Data Structures and Algorithms, C++, Python, Machine Learning, Computer Architecture,\newline{}
+Discrete Structures,Computer Organization, Data Mining, Data Engineering, Symbolic Logic}
+
+\section{Skills}
+\cvitem{Programming}{C++, \LaTeX, Git, Python, React, Typescript, Ubuntu Linux Bash}
+\cvitem{Technologies}{Anaconda, Gimp, GitHub, Linux/Ubuntu, Jupyter Notebooks,\newline{}TeXStudio, Unraid, VSCode, Windows}
+
+\section{Projects}
+\subsection{React}
+\cventry{Summer 2025}{AllCards}{Team of 4}{Capstone}{}{
+A Web-App that brings TCG collections to the digital era.\newline{}
+Users can create a searchable, personal digital binder of their physdical cards.\newline{}
+They can store, browse, and organize cards from various franchises.\newline{}
+Tech Stack:
+\begin{itemize}
+\item Frontend
+  \begin{itemize}
+  \item React
+  \item BootstrapCSS
+  \end{itemize}
+\item Backend
+  \begin{itemize}
+  \item Firebase;
+    \begin{itemize}
+    \item Authentication
+      \begin{itemize}
+      \item Register Account
+      \item Sign-in and Sign-Out
+      \end{itemize}
+    \item Firestore
+      \begin{itemize}
+        \item Add franchises to collection
+        \item Add Cards to collection per franchise
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item APIs
+  \begin{itemize}
+  \item Magic the Gathering:\newline{}https://scryfall.com/docs/api/
+  \item Pokemon:\newline{}https://docs.pokemontcg.io/
+  \item Yu-Gi-Oh!:\newline{}https://ygoprodeck.com/api-guide/
+  \item More franchises to be added
+  \end{itemize}
+\item Languages
+  \begin{itemize}
+  \item CSS
+  \item HTML
+  \item TypeScript
+  \end{itemize}
+\end{itemize}}
+
+\vspace{0.25\baselineskip}
+
+\subsection{C++}
+\cventry{Spring 2025}{SimOS: Process \& Memory Manager}{Individual Project}{}{}{
+An OS simulation through a simplified OS kernel.\newline{}
+It simulates process scheduling, memory allocation, and disk I/O handling.\newline{}
+Details:
+\begin{itemize}
+\item Designed and implemented a priority-based preemptive CPU scheduler with randomized tie-breaking for\newline{}equal-priority processes
+\item Implemented worst-fit memory allocation strategy with recursive cleanup of zombie processes and their descendants
+\item Simulated FCFS (First-Come-First-Serve) disk I/O request queue with realistic process blocking and unblocking
+\item Managed process creation (fork), waiting, and cascading termination using a dynamic PCB table and child tracking
+\item Used basic containers only (e.g., vectors and arrays); no maps or advanced STL structures
+\item Core logic based on textbook chapters 1--10, prioritizing clarity and correctness over performance
+\end{itemize}}
+
+\vspace{0.25\baselineskip}
+
+\subsection{Python -- Data Mining}
+\cventry{Fall 2024}{NBA Awards Prediction}{Team of 5}{}{}{
+Data Mining to algorithms designed to predict top candiates for several NBA Awards.\newline{}
+Previous yearly NBA statistics scraped to form datasets for predictions.\newline{}
+Details:
+\begin{itemize}
+\item API, BRScraper, scraped data from BasketballReference.com
+  \begin{itemize}
+    \item Formed datasets for players and league standings
+    \item Yearly stats dating back to 1980
+    \item Added engineered features
+  \end{itemize}
+\item Python libraries used:
+  \begin{itemize}
+  \item pandas
+  \item scikit-learn
+  \item BRScraper (API)
+  \item numpy
+  \item matplotlib
+  \item and several others
+  \end{itemize}
+\item ML Algorithms used to build models for prediction
+\end{itemize}}
+
+\vspace{0.25\baselineskip}
+
+\subsection{Unraid}
+\cventry{Apr 2022--pres.}{Home Media Server}{Individual Project}{}{}{
+A personal home media server.\newline
+Operates on Unraid VM and Ubuntu Linux.\newline{}
+Utilized as personal media cloud.\newline{}
+Details:
+\begin{itemize}
+\item Built with spare computer parts and new server specific parts
+\item Programmed and designed the operation
+\item Produced platform for
+  \begin{itemize}
+  \item eBooks
+  \item Movies and TV Shows
+  \item Music
+  \item Photos
+  \end{itemize}
+\item Future development
+  \begin{itemize}
+  \item VPN service for whole home protection
+  \item Documents
+  \item Video Games
+  \end{itemize}
+\end{itemize}}
+
+\vspace{0.5\baselineskip}
+
+\section{Supporting Experience}
+\subsection{Journeyman}
+\cventry{2015--2022}{Electrician}{Local Union \#3 IBEW}{NYC, NY}{}{
+Provided electrical and fiber-optic installations, maintenance, and repairs.\newline{}
+Details:
+\begin{itemize}
+\item Supervised jobsite
+\item Supervised and trained Apprentices
+\item Ran planning, considering budgets and material management
+\item Maintained client relations and satisfaction, and had daily correspondence the management team
+\item Provided clients with updates and alternative solutions to achieve satisfactory outcomes and project completion
+\end{itemize}}
+
+\vspace{0.5\baselineskip}
+
+\section{Certifications}
+\cvlistitem{NYS DOL -- Certificate of Completion forApprenticeship Training}
+\cvlistitem{OSHA 10}
+\cvlistitem{OSHA 30}
+\cvlistitem{Site Safety Training}
+
+\end{document}
