@@ -1,4 +1,5 @@
 \documentclass[10pt,letterpaper,sans]{moderncv}
+% academicons and fontawesome5 packages are loaded by default for xelatex 
 
 \moderncvcolor{burgundy}        % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'; for contemporary style use 'cerulean'
 
@@ -18,6 +19,9 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
 
+% changes default Font Awesome style
+\faStyle{regular}               % solid or regular
+
 % Default font families
 \setmainfont{Fira Sans}
 \setsansfont[ItalicFont={Fira Sans Light Italic},%
@@ -28,8 +32,6 @@
 
 % document language
 \usepackage[english]{babel}
-
-
 
 % personal data
 \name{Ryan}{O'Connor}
@@ -55,11 +57,11 @@
 Relevant Coursework: Data Structures and Algorithms, C++, Python, Machine Learning, Computer Architecture,\newline{}
 Discrete Structures,Computer Organization, Data Mining, Data Engineering, Symbolic Logic}
 
-\section{Skills}
+\section[\faChess]{Skills}
 \cvitem{Programming}{C++, \LaTeX, Git, Python, React, Typescript, Ubuntu Linux Bash}
 \cvitem{Technologies}{Anaconda, Gimp, GitHub, Linux/Ubuntu, Jupyter Notebooks,\newline{}TeXStudio, Unraid, VSCode, Windows}
 
-\section{Projects}
+\section[\faDesktop]{Projects}
 \subsection{React}
 \cventry{Summer 2025}{AllCards}{Team of 4}{Capstone}{}{
 A Web-App that brings TCG collections to the digital era.\newline{}
@@ -173,7 +175,7 @@ Details:
 
 \vspace{0.5\baselineskip}
 
-\section{Supporting Experience}
+\section[\faBuilding]{Supporting Experience}
 \subsection{Journeyman}
 \cventry{2015--2022}{Electrician}{Local Union \#3 IBEW}{NYC, NY}{}{
 Provided electrical and fiber-optic installations, maintenance, and repairs.\newline{}
@@ -188,7 +190,7 @@ Details:
 
 \vspace{0.5\baselineskip}
 
-\section{Certifications}
+\section[\faAddressCard]{Certifications}
 \cvlistitem{NYS DOL -- Certificate of Completion forApprenticeship Training}
 \cvlistitem{OSHA 10}
 \cvlistitem{OSHA 30}
