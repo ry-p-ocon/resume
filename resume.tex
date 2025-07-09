@@ -55,57 +55,38 @@
 %----------------------------------------------------------------------------------
 \makecvtitle
 
+\section[\faUserTie]{Summary}
+Resourceful and detail-oriented professional transitioning from a career in skilled trades to the technology sector.\newline{}
+Combines hands-on experience in asset coordination, vendor management, and operational leadership with a strong\newline{}foundation
+in computer science and software development. Proven ability to apply systems thinking and technical skills to support
+IT operations, full-stack development, and data-driven projects. Currently pursuing a B.A. in Computer Science with a focus
+on building scalable tools and managing real-world infrastructure. Seeking a role in \textit{[target field]}
+where technical aptitude and field-tested problem solving intersect.
+
 \section[\faGraduationCap]{Education}
-\cventry{2022--2025}{Bachelor of Arts in Computer Science}{Hunter College}{Manhattan NY}{Aug. 2025 Completion}{
-Relevant Coursework: Data Structures and Algorithms, C++, Python, Machine Learning, Computer Architecture,\newline{}
-Discrete Structures,Computer Organization, Data Mining, Data Engineering, Symbolic Logic}
+\cventry{2022--2025}{Bachelor of Arts in Computer Science}{Hunter College}{NYC}{Aug. 2025 Completion}{
+\cvitem{Relevant Coursework}{Data Structures and Algorithms, Machine Learning, Computer Architecture, Data Mining,\newline{}Discrete Structures, Symbolic Logic}}
 
 \section[\faChess]{Skills}
-\cvitem{Programming}{C++, \LaTeX, Git, Python, React, Typescript, Ubuntu Linux Bash}
-\cvitem{Technologies}{Anaconda, Gimp, GitHub, Linux/Ubuntu, Jupyter Notebooks,\newline{}TeXStudio, Unraid, VSCode, Windows}
 
-\section[\faDesktop]{Projects}
+\cvitem{Programming}{C++, Python, JavaScript, TypeScript, Bash, LaTeX}
+\cvitem{Web Stack}{React, Firebase, BootstrapCSS, REST APIs}
+\cvitem{Tools}{Git, GitHub, Jupyter Notebooks, VSCode, TeXStudio, Unraid, Anaconda, GIMP}
+\cvitem{Platforms}{Linux/Ubuntu, Windows}
+\cvitem{Operations}{Manual ticketing workflows, inventory tracking, vendor coordination, SOP documentation}
+\cvitem{Soft Skills}{Leadership, Communication, Attention to Detail, Problem Solving, Team Collaboration}
+
+\section[\faDesktop]{Technical Projects}
 \subsection*{\iconreact\enspace React}
-\cventry{Summer 2025}{AllCards}{Team of 4}{Capstone}{}{
-A Web-App that brings TCG collections to the digital era.\newline{}
-Users can create a searchable, personal digital binder of their physdical cards.\newline{}
-They can store, browse, and organize cards from various franchises.\newline{}
-Tech Stack:
+\cventry{Summer 2025}{AllCards -- Web App}{Team of 4}{Capstone}{}{
+A full-stack web application for organizing and browsing physical trading card collections across franchises.\newline{}
+\cvitem{Technologies}{React, TypeScript, Firebase (Authentication and Firestore), BootstrapCSS}
 \begin{itemize}
-\item Frontend
-  \begin{itemize}
-  \item React
-  \item BootstrapCSS
-  \end{itemize}
-\item Backend
-  \begin{itemize}
-  \item Firebase;
-    \begin{itemize}
-    \item Authentication
-      \begin{itemize}
-      \item Register Account
-      \item Sign-in and Sign-Out
-      \end{itemize}
-    \item Firestore
-      \begin{itemize}
-        \item Add franchises to collection
-        \item Add Cards to collection per franchise
-      \end{itemize}
-    \end{itemize}
-  \end{itemize}
-\item APIs
-  \begin{itemize}
-  \item Magic the Gathering:\newline{}https://scryfall.com/docs/api/
-  \item Pokemon:\newline{}https://docs.pokemontcg.io/
-  \item Yu-Gi-Oh!:\newline{}https://ygoprodeck.com/api-guide/
-  \item More franchises to be added
-  \end{itemize}
-\item Languages
-  \begin{itemize}
-  \item CSS
-  \item HTML
-  \item TypeScript
-  \end{itemize}
+\item Built responsive UI with modular React components and dynamic routing
+\item Integrated Firebase Authentication for user registration, login, and session management
+\item Structured Firestore database to support nested user, franchise, and card collection data
+\item Queried external APIs (Pokémon, Magic, Yu-Gi-Oh!) to fetch and normalize card information
+\item Designed architecture to support future expansion of features and franchises
 \end{itemize}}
 
 \vspace{0.25\baselineskip}
@@ -126,69 +107,45 @@ Details:
 
 \vspace{0.25\baselineskip}
 
+\newpage      % Force text to start on the next page
+
 \subsection{\iconpython\enspace Python}
-\cventry{Fall 2024}{NBA Awards Prediction}{Team of 5}{}{}{
-Data Mining algorithms designed to predict top candiates for several NBA Awards.\newline{}
-Previous yearly NBA statistics scraped to form datasets for predictions.\newline{}
-Details:
+\cventry{Fall 2024}{NBA Awards Predictor -- Data Mining}{Team of 5}{}{}{
+A machine learning pipeline that predicts NBA award winners using historical player and team statistics.\newline{}
+\cvitem{Technologies}{Python, pandas, scikit-learn, numpy, matplotlib, BRScraper}
 \begin{itemize}
-\item API, BRScraper, scraped data from BasketballReference.com
-  \begin{itemize}
-    \item Formed datasets for players and league standings
-    \item Yearly stats dating back to 1980
-    \item Added engineered features
-  \end{itemize}
-\item Python libraries used:
-  \begin{itemize}
-  \item pandas
-  \item scikit-learn
-  \item BRScraper (API)
-  \item numpy
-  \item matplotlib
-  \item and several others
-  \end{itemize}
-\item ML Algorithms used to build models for prediction
+\item Scraped and cleaned historical data from BasketballReference using BRScraper API
+\item Engineered features like win shares, usage rates, and adjusted scoring metrics
+\item Trained logistic regression, random forest, and ensemble models with cross-validation
+\item Visualized model performance and insights using matplotlib and seaborn
+\item Managed full data pipeline collaboratively with Git and Jupyter Notebooks
 \end{itemize}}
 
 \vspace{0.25\baselineskip}
 
-\subsection{\iconunraid\enspace Unraid}
+\subsection{\iconunraid\enspace Unraid -- \iconlinux\enspace Linux}
 \cventry{Apr 2022--pres.}{Home Media Server}{Individual Project}{}{}{
-A personal home media server.\newline
-Operates on Unraid VM and Ubuntu Linux.\newline{}
-Utilized as personal media cloud.\newline{}
-Details:
+A personal home media server operating on an Unraid Virtual Machine and Ubuntu Linux.\newline{}
 \begin{itemize}
-\item Built with spare computer parts and new server specific parts
-\item Programmed and designed the operation
-\item Produced platform for
-  \begin{itemize}
-  \item eBooks
-  \item Movies and TV Shows
-  \item Music
-  \item Photos
-  \end{itemize}
-\item Future development
-  \begin{itemize}
-  \item VPN service for whole home protection
-  \item Documents
-  \item Video Games
-  \end{itemize}
+\item Designed and implemented a home server using Unraid and Ubuntu Linux; selected hardware components\newline{}and managed full lifecycle from procurement to retirement
+\item Performed system design, device testing, and OS installation (Windows/Linux) tailored to functional requirements
+\item Conducted ongoing inventory tracking and upgrades for multiple compute devices, ensuring long-term system integrity\newline{}and storage optimization
+\item Implemented secure access protocols and planned future expansion for VPN and file/document lifecycle support
 \end{itemize}}
 
 \vspace{0.5\baselineskip}
 
-\section[\faBuilding]{Supporting Experience}
+\section[\faBuilding]{Relevant Experience}
 \subsection{Journeyman}
-\cventry{2015--2022}{Electrician}{Local Union \#3 IBEW}{NYC, NY}{}{
+\cventry{2015--2022}{Electrician}{Local Union \#3 IBEW}{NYC}{}{
 Provided electrical and fiber-optic installations, maintenance, and repairs.\newline{}
-Details:
 \begin{itemize}
-\item Supervised jobsite
-\item Supervised and trained Apprentices
-\item Ran planning, considering budgets and material management
-\item Maintained client relations and satisfaction, and had daily correspondence the management team
-\item Provided clients with updates and alternative solutions to achieve satisfactory outcomes and project completion
+\item Supervised warehouse and jobsite operations including hardware receiving, inventory tracking, and asset staging for deployment
+\item Managed jobsite requests through physical ticketing logs, asset request forms, and spreadsheet-based inventory tracking
+\item Coordinated with vendors and procurement teams to order, receive, and deploy job-critical IT hardware and materials
+\item Maintained detailed logs for audit compliance, asset delivery timelines, and return workflows across multiple locations
+\item Trained and led apprentices on SOPs involving equipment tracking, lifecycle usage, and safe storage procedures
+\item Interfaced with clients and stakeholders to report inventory status, resolve discrepancies, and ensure compliance with safety protocols
 \end{itemize}}
 
 \vspace{0.5\baselineskip}
