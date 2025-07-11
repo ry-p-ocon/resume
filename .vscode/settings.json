@@ -1,0 +1,55 @@
+/**
+.vscode/settings.json
+customized and controled LaTeX compilation settings & use xelatex as the compiler
+
+This does exactly what running,
+xelatex "with optional arguments" resume.tex
+would do, but directly from
+VS Code’s build button { shortcut: Ctrl + Alt + B }
+*/
+
+{
+/*
+    "latex-workshop.latex.tools": When I build this document, what command(s) and which LaTeX engine should I use?
+    use xelatex as default compiler over pdflatex
+*/
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+        }
+    ],
+
+/*
+    Define build recipe named 'xelatex' using the ^^above^^ tool
+    “Here’s how I want you to compile LaTeX documents.”
+*/
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": ["xelatex"]
+        }
+    ],
+
+    "latex-workshop.latex.recipe.default": "first",
+    "latex-workshop.latex.build.forceRecipeUsage": true,
+
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.watch.pdf.delay": 1000,
+
+
+    "[latex]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {},
+        "editor.semanticHighlighting.enabled": false,
+        "editor.lightbulb.enabled": "off"
+    }
+
+}
