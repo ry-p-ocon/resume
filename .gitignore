@@ -1,6 +1,9 @@
 # Ignore these directories
 moderncv\ docs/
-supportDocs/
+supportDocs/*
+
+# re-include this subdirectory
+!supportDocs/devfont/
 
 
 ## Core latex/pdflatex auxiliary files:
