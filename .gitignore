@@ -1,6 +1,7 @@
 # Ignore these directories
 moderncv\ docs/
 supportDocs/*
+alt-resumes/*
 
 # re-include this subdirectory
 !supportDocs/devfont/
